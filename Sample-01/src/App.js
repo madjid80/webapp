@@ -24,11 +24,7 @@ const App = () => {
   if (error) {
     return <div>Oops... {error.message}</div>;
   }
-
-  if (isLoading) {
-    return <Loading />;
-  }
-
+  console.log(isLoading, error);
   return (
     <Router history={history}>
       <div id="app" className="d-flex flex-column h-100">
